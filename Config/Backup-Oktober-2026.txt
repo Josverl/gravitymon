@@ -1,0 +1,159 @@
+{
+  "meta": {
+    "version": "2.2.0",
+    "software": "GravityMon",
+    "created": "2026-10-17"
+  },
+  "config": {
+    "id": "b2dca0",
+    "mdns": "gravitymon",
+    "temp_unit": "C",
+    "gravity_unit": "G",
+    "ota_url": "",
+    "storage_sleep": true,
+    "voltage_factor": 1.64,
+    "voltage_config": 4.11,
+    "gyro_temp": false,
+    "gyro_swap_xy": false,
+    "gyro_filter": false,
+    "battery_saving": true,
+    "tempsensor_resolution": 10,
+    "temp_adjustment_value": 0,
+    "wifi_portal_timeout": 240,
+    "wifi_connect_timeout": 30,
+    "wifi_ssid": "AtticWare",
+    "wifi_ssid2": "Sterrebos",
+    "wifi_pass": "**********",
+    "wifi_pass2": "**********",
+    "wifi_direct_ssid": "",
+    "wifi_direct_pass": "",
+    "use_wifi_direct": false,
+    "wifi_scan_ap": false,
+    "token": "",
+    "token2": "",
+    "sleep_interval": 900,
+    "push_timeout": 10,
+    "skip_ssl_on_test": true,
+    "http_post_target": "http://log.brewfather.net/ispindel?id=3Rvtx1fB5XXWSS",
+    "http_post_header1": "Content-Type: application/json",
+    "http_post_header2": "",
+    "http_post_tcp": false,
+    "http_post_int": 0,
+    "http_post_format_gravity": "%7B%22name%22%3A%20%22%24%7Bmdns%7D%5BSG%5D%22%2C%20%22ID%22%3A%20%22%24%7Bid%7D%22%2C%20%22token%22%3A%20%22%24%7Btoken%7D%22%2C%20%22interval%22%3A%20%24%7Bsleep-interval%7D%2C%20%22temperature%22%3A%20%24%7Btemp%7D%2C%20%22temp_units%22%3A%20%22%24%7Btemp-unit%7D%22%2C%20%22gravity%22%3A%20%24%7Bgravity%7D%2C%20%22velocity%22%3A%20%24%7Bvelocity%7D%2C%20%22angle%22%3A%20%24%7Bangle%7D%2C%20%22battery%22%3A%20%24%7Bbattery%7D%2C%20%22RSSI%22%3A%20%24%7Brssi%7D%2C%20%22corr-gravity%22%3A%20%24%7Bcorr-gravity%7D%2C%20%22gravity-unit%22%3A%20%22%24%7Bgravity-unit%7D%22%2C%20%22run-time%22%3A%20%24%7Brun-time%7D%20%7D",
+    "http_post2_target": "",
+    "http_post2_header1": "Content-Type: application/json",
+    "http_post2_header2": "",
+    "http_post2_int": 0,
+    "http_post2_format_gravity": "%7B%22name%22%3A%20%22%24%7Bmdns%7D%22%2C%20%22ID%22%3A%20%22%24%7Bid%7D%22%2C%20%22token%22%3A%20%22%24%7Btoken%7D%22%2C%20%22interval%22%3A%20%24%7Bsleep-interval%7D%2C%20%22temperature%22%3A%20%24%7Btemp%7D%2C%20%22temp_units%22%3A%20%22%24%7Btemp-unit%7D%22%2C%20%22gravity%22%3A%20%24%7Bgravity%7D%2C%20%22velocity%22%3A%20%24%7Bvelocity%7D%2C%20%22angle%22%3A%20%24%7Bangle%7D%2C%20%22battery%22%3A%20%24%7Bbattery%7D%2C%20%22RSSI%22%3A%20%24%7Brssi%7D%2C%20%22corr-gravity%22%3A%20%24%7Bcorr-gravity%7D%2C%20%22gravity-unit%22%3A%20%22%24%7Bgravity-unit%7D%22%2C%20%22run-time%22%3A%20%24%7Brun-time%7D%20%7D",
+    "http_get_target": "",
+    "http_get_header1": "",
+    "http_get_header2": "",
+    "http_get_int": 0,
+    "http_get_format_gravity": "%3Fname%3D%24%7Bmdns%7D%26id%3D%24%7Bid%7D%26token%3D%24%7Btoken2%7D%26interval%3D%24%7Bsleep-interval%7D%26temperature%3D%24%7Btemp%7D%26temp-units%3D%24%7Btemp-unit%7D%26gravity%3D%24%7Bgravity%7D%26velocity%3D%24%7Bvelocity%7D%26angle%3D%24%7Bangle%7D%26battery%3D%24%7Bbattery%7D%26rssi%3D%24%7Brssi%7D%26corr-gravity%3D%24%7Bcorr-gravity%7D%26gravity-unit%3D%24%7Bgravity-unit%7D%26run-time%3D%24%7Brun-time%7D",
+    "influxdb2_target": "",
+    "influxdb2_org": "",
+    "influxdb2_bucket": "",
+    "influxdb2_token": "",
+    "influxdb2_int": 0,
+    "influxdb2_format_gravity": "measurement%2Chost%3D%24%7Bmdns%7D%2Cdevice%3D%24%7Bid%7D%2Ctemp-format%3D%24%7Btemp-unit%7D%2Cgravity-format%3D%24%7Bgravity-unit%7D%20gravity%3D%24%7Bgravity%7D%2Cvelocity%3D%24%7Bvelocity%7D%2Ccorr-gravity%3D%24%7Bcorr-gravity%7D%2Cangle%3D%24%7Bangle%7D%2Ctemp%3D%24%7Btemp%7D%2Cbattery%3D%24%7Bbattery%7D%2Crssi%3D%24%7Brssi%7D%0A",
+    "mqtt_target": "",
+    "mqtt_port": 1883,
+    "mqtt_user": "",
+    "mqtt_pass": "",
+    "mqtt_int": 0,
+    "mqtt_format_gravity": "ispindel%2F%24%7Bmdns%7D%2Ftilt%3A%24%7Bangle%7D%7C%0Aispindel%2F%24%7Bmdns%7D%2Ftemperature%3A%24%7Btemp%7D%7C%0Aispindel%2F%24%7Bmdns%7D%2Ftemp_units%3A%24%7Btemp-unit%7D%7C%0Aispindel%2F%24%7Bmdns%7D%2Fbattery%3A%24%7Bbattery%7D%7C%0Aispindel%2F%24%7Bmdns%7D%2Fgravity%3A%24%7Bgravity%7D%7C%0Aispindel%2F%24%7Bmdns%7D%2Fvelocity%3A%24%7Bvelocity%7D%7C%0Aispindel%2F%24%7Bmdns%7D%2Finterval%3A%24%7Bsleep-interval%7D%7C%0Aispindel%2F%24%7Bmdns%7D%2FRSSI%3A%24%7Brssi%7D%7C%0A",
+    "ble_tilt_color": "",
+    "ble_format": 0,
+    "gravity_formula": "-4.1243068e-7*tilt^3+0.000056709362*tilt^2-0.00084554071*tilt+0.99995112",
+    "gravity_temp_adjustment": false,
+    "formula_calculation_data": [
+      {
+        "a": 27.81,
+        "g": 1.004
+      },
+      {
+        "a": 32.87,
+        "g": 1.022
+      },
+      {
+        "a": 37.61,
+        "g": 1.03
+      },
+      {
+        "a": 41.19,
+        "g": 1.037
+      },
+      {
+        "a": 52.75,
+        "g": 1.05
+      },
+      {
+        "a": 55.13,
+        "g": 1.055
+      },
+      {
+        "a": 62.24,
+        "g": 1.064
+      },
+      {
+        "a": 66.54,
+        "g": 1.072
+      },
+      {
+        "a": 67.45,
+        "g": 1.079
+      },
+      {
+        "a": 0,
+        "g": 1
+      },
+      {
+        "a": 0,
+        "g": 1
+      },
+      {
+        "a": 0,
+        "g": 1
+      },
+      {
+        "a": 0,
+        "g": 1
+      },
+      {
+        "a": 0,
+        "g": 1
+      },
+      {
+        "a": 0,
+        "g": 1
+      },
+      {
+        "a": 0,
+        "g": 1
+      },
+      {
+        "a": 0,
+        "g": 1
+      },
+      {
+        "a": 0,
+        "g": 1
+      },
+      {
+        "a": 0,
+        "g": 1
+      },
+      {
+        "a": 0,
+        "g": 1
+      }
+    ],
+    "gyro_read_count": 50,
+    "gyro_moving_threashold": 500,
+    "formula_max_deviation": 0.01,
+    "formula_calibration_temp": 20,
+    "ignore_low_angles": true,
+    "gyro_calibration_data": [],
+    "dark_mode": false
+  }
+}
